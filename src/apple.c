@@ -22,7 +22,7 @@ int main(){
         int m = (lb + ub) / 2;
         int sum = 0;
         for(i = 0; i < n; i++){
-        sum = sum + (A[i] + (m - 1)) / m;
+        sum += (A[i] + (m - 1)) / m;
         }
         if(sum <= k) ub = m;
         else lb = m;
