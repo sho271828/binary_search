@@ -11,8 +11,13 @@ int main(){
   for(i = 0; i < n; i++){
     scanf("%d", &A[i]);
   }
+    int max;
+    max = A[0];
+    for(i = 0; i < n; i++){
+        if(A[i] >= max) max = A[i];
+    }
     lb = 0;
-    ub = A[n - 1];
+    ub = max;
     while(ub - lb > 1){
         int m = (lb + ub) / 2;
         int sum = 0;
