@@ -17,7 +17,7 @@ int main(){
         if(A[i] >= max) max = A[i];
     }
     lb = 0;
-    ub = max;
+    ub = max + 1;
     while(ub - lb > 1){
         int m = (lb + ub) / 2;
         int sum = 0;
